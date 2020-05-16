@@ -1,69 +1,29 @@
-# Book-Search
+# Create React Express App
 
+## About This Boilerplate
 
-------------------------------------------------------------
+This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
 
-# App's Purpose:
+The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
 
+## Starting the app locally
 
-============================================================
+Start by installing front and backend dependencies. While in this directory, run the following command:
 
-## Technologies Utilized:
+```
+npm install
+```
 
-=============================================================
+This should install node modules within the server and the client folder.
 
-## Available Scripts
+After both installations complete, run the following command in your terminal:
 
-In the project directory, you can run:
+```
+npm start
+```
 
-### `npm start`
+Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Deployment (Heroku)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-=============================================================
-
-## Developer Techniques:
-- 
-
-
-=============================================================
-
-
- ### Screenshots of the app's functions:
-
-Javascript code put into MySQL Workbench:
-![initial load](/README/screenshot_1.jpg)
---------------------------------------------------------------
-
-![this is the text that would show if image doesn't work](link to the image)
-
-
-
---------------------------------------------------------------
-
---------------------------------------------------------------
-
---------------------------------------------------------------
-
---------------------------------------------------------------
-
---------------------------------------------------------------
-
---------------------------------------------------------------
-
+To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
